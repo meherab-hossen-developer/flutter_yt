@@ -2,5 +2,5 @@ import 'package:flutter/cupertino.dart';
 
 void main(){
   
-  runApp(Text('kkk', textDirection:  TextDirection.rtl,));
+  runApp(Text('Hello world', textDirection:  TextDirection.rtl,));
 }
