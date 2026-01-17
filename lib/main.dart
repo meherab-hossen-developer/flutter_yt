@@ -1,6 +1,6 @@
-import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'MyApp.dart';
 
-void main(){
-  
-  runApp(Text('Hello world', textDirection:  TextDirection.rtl,));
+void main() {
+  runApp(MyApp());
 }
