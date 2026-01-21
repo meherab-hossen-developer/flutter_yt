@@ -19,18 +19,21 @@ class CurrencyConverter extends StatelessWidget {
 
     return MaterialApp(
       home: Scaffold(
+        appBar: AppBar(
+          title: Text('Currency Converter App',
+            style: TextStyle(
+              fontSize: 25,
+              color: Colors.black,
+              fontWeight: FontWeight.w700,
+            ),
+          ),
+        ),
         backgroundColor: Colors.white,
         body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Text('0',
-              style: TextStyle(
-                fontSize: 100,
-                color: Colors.black,
-                fontWeight: FontWeight.w700,
-              ),
-              ),
+              SizedBox(height: 20,),
               Padding(
                 padding: const EdgeInsets.only(left: 12.2, right: 12.2),
                 child: TextField(
@@ -51,6 +54,13 @@ class CurrencyConverter extends StatelessWidget {
                   ),
                   keyboardType: TextInputType.number,
                 ),
+              ),
+              TextButton(onPressed: () {
+                //debug mode: testing applications, building features
+                //release mode: how will app look like and production
+                //profile mode: run the app in release mode but also give error messages as like debug mode
+                print('Convert button pressed');
+              }, child: Text('Convert'),
               ),
             ],
           ),
