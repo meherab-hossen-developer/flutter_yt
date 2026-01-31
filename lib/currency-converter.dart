@@ -55,12 +55,20 @@ class CurrencyConverter extends StatelessWidget {
                   keyboardType: TextInputType.number,
                 ),
               ),
+              SizedBox(height: 20,),
               TextButton(onPressed: () {
                 //debug mode: testing applications, building features
                 //release mode: how will app look like and production
                 //profile mode: run the app in release mode but also give error messages as like debug mode
                 print('Convert button pressed');
-              }, child: Text('Convert'),
+              },
+                style: ButtonStyle(
+                  backgroundColor: MaterialStatePropertyAll(Colors.black),
+                  foregroundColor: MaterialStatePropertyAll(Colors.white),
+                  fixedSize: MaterialStatePropertyAll(Size(390, 50)),
+                ),
+                child: Text('Convert'
+                ),
               ),
             ],
           ),
